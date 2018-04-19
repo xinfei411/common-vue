@@ -1,4 +1,4 @@
 export default{
     debug:true,
-    baseUrl:this.debug?'':''
+    baseUrl:"http://localhost:3000/"
 }

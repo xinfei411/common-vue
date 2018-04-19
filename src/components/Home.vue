@@ -9,6 +9,11 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created(){
+    this.$post('getName',{}).then(function(data){
+      console.log(data)
+    });
   }
 }
 </script>
