@@ -15,11 +15,12 @@ export default new Router({
       name: 'HelloWorld',
       component: HelloWorld,
       redirect:'/home',
+      meta: { title: '基础框架'},
       children:[
-        {path:'/home',component: Home},
-        {path:'/news',component: News},
-        {path:'/shoppingCart',component: ShoppingCart},
-        {path:'/my',component: My}
+        {path:'/home',component: Home,meta: { title: '首页' }},
+        {path:'/news',component: News,meta: { title: '消息' }},
+        {path:'/shoppingCart',component: ShoppingCart,meta: { title: '购物车' }},
+        {path:'/my',component: My,meta: { title: '我的' }}
       ]
     }
   ]
