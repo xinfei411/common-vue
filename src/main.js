@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router/routerShadow'
-
+import '@/filters'
 
 import http from './plugins/http'
 

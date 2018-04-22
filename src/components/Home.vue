@@ -1,5 +1,10 @@
 <template>
-  <div class="hello">首页</div>
+  <div class="hello">
+    首页
+    <div>
+      {{id|id(6,3)}}
+    </div>
+  </div>
 </template>
 
 <script>
@@ -7,7 +12,7 @@ export default {
   name: 'Home',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      id: '610430198808062555'
     }
   },
   created(){
