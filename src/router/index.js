@@ -14,7 +14,7 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld,
-      redirect:'/Home',
+      redirect:'/home',
       meta: { title: '基础框架'},
       children:[
         {path:'/home',component: Home,meta: { title: '首页' }},

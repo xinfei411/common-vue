@@ -4,10 +4,10 @@
       <router-view></router-view>
     </div>
     <ul class="nav">
-      <router-link tag="li" class="nav-item" to="Home" active-class="active">首页</router-link>
-      <router-link tag="li" class="nav-item" to="News" active-class="active">消息</router-link>
-      <router-link tag="li" class="nav-item" to="shoppingCart" active-class="active">购物车</router-link>
-      <router-link tag="li" class="nav-item" to="My" active-class="active">我的</router-link>
+      <router-link tag="li" class="nav-item" to="/home" active-class="active">首页</router-link>
+      <router-link tag="li" class="nav-item" to="/news" active-class="active">消息</router-link>
+      <router-link tag="li" class="nav-item" to="/shoppingCart" active-class="active">购物车</router-link>
+      <router-link tag="li" class="nav-item" to="/my" active-class="active">我的</router-link>
     </ul>
   </div>
 </template>
