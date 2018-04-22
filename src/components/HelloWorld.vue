@@ -14,42 +14,41 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-    }
+  name: "HelloWorld",
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-*{
+<style lang="scss" scoped>
+* {
   padding: 0;
   margin: 0;
 }
-.content{
+.content {
   position: fixed;
   width: 100%;
   overflow: scroll;
   height: calc(100vh - 41px);
 }
-.nav{
-  background:#eee;
+.nav {
+  background: #eee;
   position: fixed;
   bottom: 0;
   display: flex;
   width: 100%;
   height: 40px;
-  border-top:1px solid #999;
-}
-.nav-item{
-  line-height: 40px;
-  list-style: none;
-  flex: 1;
-  color: #333;
-}
-.active{
-  color: #42b983;
+  border-top: 1px solid #999;
+  .nav-item {
+    line-height: 40px;
+    list-style: none;
+    flex: 1;
+    color: #333;
+  }
+  .active {
+    color: #42b983;
+  }
 }
 </style>
