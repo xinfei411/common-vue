@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import Home from '@/components/Home'
-import News from '@/components/News'
-import ShoppingCart from '@/components/ShoppingCart'
-import My from '@/components/My'
+const HelloWorld =()=> import('@/components/HelloWorld')
+const Home=()=>import('@/components/Home')
+const News=()=> import('@/components/News')
+const ShoppingCart=()=> import('@/components/ShoppingCart')
+const My=()=> import('@/components/My')
 
 Vue.use(Router)
 
