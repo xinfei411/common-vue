@@ -28,4 +28,8 @@
 ```
 1. 手动完成实例挂载
 ```
+```
+1. beforeUpdate、updated、$nextTick
+2. 在页面销毁（beforeDestroy）时做一些GC,例如清除定时器
+```
 
