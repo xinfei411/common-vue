@@ -6,17 +6,18 @@
     </div>
     <p id='name'>{{name}}</p>
     <button @click='setName'>更换姓名</button>
+    
   </div>
 </template>
 
 <script>
-let si =null;
+let si = null;
 export default {
   name: "Home",
   data() {
     return {
       id: "610430198808062555",
-      name: "李玉霞"
+      name: "李玉霞",
     };
   },
   created() {
@@ -24,12 +25,12 @@ export default {
       console.log(data);
     });
   },
-  mounted(){
-    si=setInterval(() => {
+  mounted() {
+    si = setInterval(() => {
       console.log(1);
     }, 1000);
   },
-  beforeDestroy(){
+  beforeDestroy() {
     clearInterval(si);
   },
   beforeUpdate() {
@@ -38,6 +39,7 @@ export default {
   updated() {
     console.log(document.querySelector("#name").innerHTML);
   },
+
   methods: {
     setName() {
       let vm = this;

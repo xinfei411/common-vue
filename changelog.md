@@ -32,4 +32,8 @@
 1. beforeUpdate、updated、$nextTick
 2. 在页面销毁（beforeDestroy）时做一些GC,例如清除定时器
 ```
+```
+1. computed、watch比较
+2. 父子组件的通信，父组件用props传值给子组件，子组件通过$emit触发父作用域的回调函数
+```
 
