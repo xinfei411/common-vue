@@ -36,4 +36,8 @@
 1. computed、watch比较
 2. 父子组件的通信，父组件用props传值给子组件，子组件通过$emit触发父作用域的回调函数
 ```
+```
+1. slot插槽的运用
+2. keep-alive activeted deactiveted
+```
 

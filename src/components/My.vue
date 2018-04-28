@@ -2,7 +2,9 @@
   <div class="hello">
     <h3>我的</h3>
     <h3 @click="options.show = true">点我弹出模态框</h3>
-    <modal :options="options" @a="aa" @b="bb"></modal>
+    <modal :options="options" @a="aa" @b="bb">
+      <h4>slot测试</h4>
+    </modal>
   </div>
   
 </template>

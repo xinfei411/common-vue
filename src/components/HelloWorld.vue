@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <div class="content">
+      <keep-alive :include="['Home','News','ShoppingCart','My']">
       <router-view></router-view>
+      </keep-alive>
     </div>
     <ul class="nav">
       <router-link tag="li" class="nav-item" to="/home" active-class="active">首页</router-link>

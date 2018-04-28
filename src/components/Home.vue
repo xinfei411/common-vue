@@ -30,6 +30,12 @@ export default {
       console.log(1);
     }, 1000);
   },
+  activated(){
+    console.log('当前页面已切入');
+  },
+  deactivated(){
+    console.log('当前页面已切出');
+  },
   beforeDestroy() {
     clearInterval(si);
   },

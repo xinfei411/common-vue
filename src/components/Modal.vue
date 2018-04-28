@@ -2,6 +2,7 @@
   <div class="modal" v-if="options.show">
     <div class="alert">
       <h3>{{options.title}}</h3>
+      <slot></slot>
       <div>
         <button @click="yes">确定</button>
         <button @click="no">取消</button>
