@@ -2,7 +2,7 @@
   <div class="hello">
     购物车
     <div v-for='(item,index) in goods' :key="index">
-      <div>{{item.name}} {{item.price}} <input v-model="item.num"></div>
+      <div>{{item.name}} {{item.price}} <input v-model="item.num" v-if="index == 0" v-focus><input v-else v-model="item.num" ></div>
     </div>
     <div>合计:{{totalPrice}}</div>
     <button @click='changeArr'>改变数组</button>

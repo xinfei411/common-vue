@@ -40,4 +40,7 @@
 1. slot插槽的运用
 2. keep-alive activeted deactiveted
 ```
+```
+1. 自定义指令
+```
 
