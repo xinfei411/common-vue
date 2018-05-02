@@ -6,14 +6,18 @@
     </div>
     <p id='name'>{{name}}</p>
     <button @click='setName'>更换姓名</button>
-    
+    <Pagination @change='cg'></Pagination>
   </div>
 </template>
 
 <script>
-let si = null;
+import Pagination from '@/components/pagination'
+// let si = null;
 export default {
   name: "Home",
+  components:{
+    Pagination
+  },
   data() {
     return {
       id: "610430198808062555",
@@ -26,9 +30,9 @@ export default {
     });
   },
   mounted() {
-    si = setInterval(() => {
-      console.log(1);
-    }, 1000);
+    // si = setInterval(() => {
+    //   console.log(1);
+    // }, 1000);
   },
   activated(){
     console.log('当前页面已切入');
@@ -37,7 +41,7 @@ export default {
     console.log('当前页面已切出');
   },
   beforeDestroy() {
-    clearInterval(si);
+    // clearInterval(si);
   },
   beforeUpdate() {
     console.log(document.querySelector("#name").innerHTML);
@@ -55,6 +59,9 @@ export default {
         console.log(document.querySelector("#name").innerHTML);
       });
       console.log(document.querySelector("#name").innerHTML);
+    },
+    cg(now){
+      console.log(now)
     }
   }
 };
