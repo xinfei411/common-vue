@@ -6,39 +6,38 @@
     </div>
     <p id='name'>{{name}}</p>
     <button @click='setName'>更换姓名</button>
-    <Pagination @change='cg'></Pagination>
+    
   </div>
 </template>
 
 <script>
-import Pagination from '@/components/pagination'
+
 // let si = null;
 export default {
   name: "Home",
-  components:{
-    Pagination
-  },
+  
   data() {
     return {
       id: "610430198808062555",
-      name: "李玉霞",
+      name: "李玉霞"
     };
   },
   created() {
     this.$post("getName", {}).then(function(data) {
-      console.log(data);
+      // console.log(data);
     });
+    
   },
   mounted() {
     // si = setInterval(() => {
     //   console.log(1);
     // }, 1000);
   },
-  activated(){
-    console.log('当前页面已切入');
+  activated() {
+    // console.log('当前页面已切入');
   },
-  deactivated(){
-    console.log('当前页面已切出');
+  deactivated() {
+    // console.log('当前页面已切出');
   },
   beforeDestroy() {
     // clearInterval(si);
@@ -60,9 +59,7 @@ export default {
       });
       console.log(document.querySelector("#name").innerHTML);
     },
-    cg(now){
-      console.log(now)
-    }
+    
   }
 };
 </script>

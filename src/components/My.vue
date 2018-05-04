@@ -5,34 +5,44 @@
     <modal :options="options" @a="aa" @b="bb">
       <h4>slot测试</h4>
     </modal>
+    <myTable :op="op1"></myTable>
   </div>
   
 </template>
 
 <script>
-import modal from '@/components/Modal'
+import modal from "@/components/Modal";
+import myTable from "@/components/table";
 export default {
-  name: 'My',
-  components:{
-    modal
+  name: "My",
+  components: {
+    modal,myTable
   },
-  data () {
+  data() {
     return {
-      options:{
-        title:'确定删除吗?',
-        show:false
+      options: {
+        title: "确定删除吗?",
+        show: false
+      },
+      op1: {
+        url: "list",
+        kv: {
+          编号: "name",
+          名称: "id"
+        },
+        pgDirection:'left'
       }
-    }
+    };
   },
-  methods:{
-    aa(){
-      console.log('删除成功！')
+  methods: {
+    aa() {
+      console.log("删除成功！");
     },
-    bb(){
-      console.log('操作取消')
-    },
+    bb() {
+      console.log("操作取消");
+    }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
