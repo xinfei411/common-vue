@@ -4,6 +4,7 @@ const HelloWorld =()=> import('@/components/HelloWorld')
 const Home=()=>import('@/components/Home')
 const News=()=> import('@/components/News')
 const ShoppingCart=()=> import('@/components/ShoppingCart')
+const InfiniteScrollTest=()=> import('@/components/InfiniteScrollTest')
 const My=()=> import('@/components/My')
 
 Vue.use(Router)
@@ -22,6 +23,13 @@ export default new Router({
         {path:'/shoppingCart',component: ShoppingCart,meta: { title: '购物车' }},
         {path:'/my',component: My,meta: { title: '我的' }}
       ]
+    },
+    {
+      path: '/InfiniteScrollTest',
+      name: 'InfiniteScrollTest',
+      component: InfiniteScrollTest,
+      meta: { title: '无限加载'},
+      children:[]
     }
   ]
 })

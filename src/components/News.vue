@@ -1,5 +1,7 @@
 <template>
-  <div class="hello">消息</div>
+  <div class="hello">消息
+    <router-link to='InfiniteScrollTest'>跳转到无限加载</router-link>
+  </div>
 </template>
 
 <script>

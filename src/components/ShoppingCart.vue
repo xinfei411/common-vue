@@ -6,6 +6,7 @@
     </div>
     <div>合计:{{totalPrice}}</div>
     <button @click='changeArr'>改变数组</button>
+    
   </div>
 </template>
 
